@@ -1,0 +1,117 @@
+:root {
+    --bgmain-color: #EDEFEB;
+    --secondary-color: #832B5B;
+    --content-color: #fff;
+    --border-color: #c0c0c0;
+    --hover-color: #bebebe;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--bgmain-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.container {
+    width: 70%;
+    border: 1px solid var(--border-color);
+    margin: auto auto;
+}
+
+/* --------------Заголовок------------ */
+.header {
+    padding: 1rem 1rem 0 1rem;
+    background-color: var(--content-color);
+}
+
+.header h1 {
+    padding-bottom: 3px;
+    border-bottom: 1px dotted var(--secondary-color);
+}
+
+/* --------Блок с новостями--------- */
+
+.content {  
+    padding: 2rem 1rem 1rem 1rem;
+    background-color: var(--content-color);
+}
+
+.news_content {
+    margin-bottom: 10px;
+}
+
+.news_header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.current_date {
+    font-family: 'Arial';
+    background-color: var(--secondary-color);
+    color: var(--content-color);
+    padding: 0.25rem;
+    margin-right: 10px;
+}
+
+.news_title {
+    font-size: 1.2rem;
+}
+
+/* --------Страницы----------- */
+
+.footer {
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--content-color);
+}
+
+.footer h3 {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    border-top: 1px dotted var(--secondary-color);
+}
+
+.pagination {
+    text-decoration: none;
+}
+
+.numbers {
+    width: 30px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    font-size: 11px;
+    background-color: var(--bgmain-color);
+    transition: background-color 1s;
+}
+
+.active {
+    background-color: var(--secondary-color);
+    color: var(--content-color);
+}
+
+.numbers[type="button"] {
+    padding: 3px 4px;
+    border-radius: 2px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.numbers:hover:not(.active) {
+    background-color: var(--hover-color); ;
+    color: var(--content-color);
+}
