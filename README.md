@@ -10,7 +10,7 @@
 - there is a link `Все новости >>`on the article page that takes you back to the main page
 - linked `techart_news` database in _database.php_
 - using `mysqli_fetch_array` function (returns one array with both numeric keys and associative strings (column names)), necessary data was fetched from `news` table
-- to navigate between announcement blocks on the main page, the pages were shifted by 5 units
+- navigation between announcement blocks on the main page, the pages were shifted by 5 units
 
 ---
 
